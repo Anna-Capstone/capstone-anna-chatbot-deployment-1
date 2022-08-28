@@ -1,0 +1,232 @@
+@font-face {
+   font-family: GTWalsheimProRegular;
+   src: url('./fonts/GTWalsheimPro-Regular.ttf');
+}
+@font-face {
+   font-family: GTWalsheimProLight;
+   src: url('./fonts/GTWalsheimPro-Light.ttf');
+}
+@font-face {
+   font-family: GTWalsheimProThin;
+   src: url('./fonts/GTWalsheimPro-Thin.ttf');
+}
+@font-face {
+   font-family: GTWalsheimProBold;
+   src: url('./fonts/GTWalsheimPro-Bold.ttf');
+}
+
+:root {
+   --primary: #e7b22b;
+   --primary-light: #ffcd4e;
+   --primary-dark: #b88400;
+   --black: #3a3a3a;
+   --danger: #ff5050;
+   --grey: #f1f1f1;
+   --white: #ffffff;
+}
+
+* {
+   font-family: GTWalsheimProRegular, sans-serif;
+   font-size: 1rem;
+}
+
+html {
+   height: 100%;
+   scrollbar-width: thin;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   height: 100%;
+   color: var(--black);
+}
+
+#root {
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+/* bg */
+.bg-primary {
+   color: var(--white) !important;
+   background-color: var(--primary) !important;
+}
+.bg-primary-light {
+   color: var(--white) !important;
+   background-color: var(--primary-light) !important;
+}
+.bg-primary-dark {
+   color: var(--white) !important;
+   background-color: var(--primary-dark) !important;
+}
+.bg-white {
+   color: var(--black) !important;
+   background-color: var(--white) !important;
+}
+.bg-grey {
+   color: var(--black) !important;
+   background-color: var(--grey) !important;
+}
+
+/* text */
+.text-primary {
+   color: var(--primary) !important;
+}
+.text-primary-light {
+   color: var(--primary-light) !important;
+}
+.text-primary-dark {
+   color: var(--primary-dark) !important;
+}
+.text-dark {
+   color: var(--black) !important;
+}
+.text-white {
+   color: var(--white) !important;
+}
+.text-danger {
+   color: var(--danger) !important;
+}
+
+/* buttons */
+.btn-primary {
+   border: solid 1px var(--primary) !important;
+   background-color: var(--primary) !important;
+   color: var(--white) !important;
+}
+.btn-primary:hover {
+   border: solid 1px var(--primary-dark) !important;
+   background-color: var(--primary-dark) !important;
+   color: var(--white) !important;
+}
+.btn-primary:focus {
+   box-shadow: 0 0 0 0.25rem rgba(231, 178, 43, 50%) !important;
+}
+
+.btn-black {
+   border: solid 1px var(--black) !important;
+   background-color: var(--black) !important;
+   color: var(--white) !important;
+}
+.btn-black:hover {
+   border: solid 1px var(--white) !important;
+   background-color: var(--white) !important;
+   color: var(--black) !important;
+}
+.btn-black:focus {
+   box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 50%) !important;
+}
+
+.btn-danger {
+   border: solid 1px var(--danger) !important;
+   background-color: var(--danger) !important;
+   color: var(--white) !important;
+}
+.btn-danger:hover {
+   border: solid 1px #ea3b3b !important;
+   background-color: #ea3b3b !important;
+   color: var(--white) !important;
+}
+.btn-danger:focus {
+   box-shadow: 0 0 0 0.25rem rgba(234, 59, 59, 50%) !important;
+}
+
+.btn-link {
+   border: none !important;
+   background-color: transparent !important;
+   color: var(--primary) !important;
+}
+.btn-link:hover {
+   border: none !important;
+   background-color: transparent !important;
+   color: var(--primary-dark) !important;
+}
+.btn-link:focus {
+   box-shadow: none !important;
+}
+
+/*  btn outline */
+.btn-outline-primary {
+   border: solid 2px var(--primary) !important;
+   background-color: transparent !important;
+   color: var(--primary) !important;
+}
+.btn-outline-primary:hover {
+   background-color: var(--primary) !important;
+   color: var(--white) !important;
+}
+.btn-outline-primary:focus {
+   box-shadow: 0 0 0 0.25rem rgba(231, 178, 43, 50%) !important;
+}
+
+/* form-control */
+.form-control {
+   font-size: 0.9rem !important;
+   color: var(--black) !important;
+   background-color: var(--white) !important;
+}
+.form-control:focus {
+   color: var(--black) !important;
+   background-color: var(--white) !important;
+   border-color: var(--primary) !important;
+   outline: 0 !important;
+   box-shadow: 0 0 0 0.25rem rgba(231, 178, 43, 25%) !important;
+}
+
+.cursor {
+   cursor: pointer;
+}
+
+/* body::-webkit-scrollbar {
+   width: 0.5rem !important;
+   height: 0.5rem !important;
+}
+body::-webkit-scrollbar-track {
+   background-color: var(--black);
+}
+body::-webkit-scrollbar-thumb {
+   background-color: var(--primary);
+   border-radius: 30px;
+} */
+
+.anna-img {
+   min-width: 200px;
+   width: 280px;
+}
+
+.anna-logo {
+   width: 55px;
+}
+
+.custom-heading {
+   font-family: GTWalsheimProBold, sans-serif;
+}
+.thin-text {
+   font-family: GTWalsheimProThin, sans-serif;
+}
+
+.icon-small {
+   min-width: 25px;
+   font-size: 25px;
+}
+
+.icon-medium {
+   min-width: 30px;
+   font-size: 30px;
+}
+.icon-large {
+   min-width: 50px;
+   font-size: 50px;
+}
+
+.custom-icon-large {
+   width: 50px;
+}
+
+/* spinner */
+.spinner-lg {
+   width: 100px;
+   height: 100px;
+}

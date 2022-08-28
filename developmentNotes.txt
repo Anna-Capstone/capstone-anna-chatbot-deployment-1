@@ -1,0 +1,53 @@
+**Github**
+Github Account: reymondgomera
+Github Repository: https://github.com/reymondgomera/capstone-anna-chatbot.git
+
+**Github Remote**
+heroku-remote: https://git.heroku.com/enigmatic-thicket-43104.git
+capstone-remote: https://github.com/reymondgomera/capstone-anna.git
+
+** avoid authentication error ** load API key json to environment variable - GOOGLE_APPLICATION_CREDENTIALS ** set a environment variable
+export GOOGLE_APPLICATION_CREDENTIALS=D:/REY_MOND_File/Capstone Project/anna-chatbot/anna-eagh-api-key.json
+
+**Heroku** 
+Heroku Account: anna.capstone24@gmail.com
+Heroku App URL: https://enigmatic-thicket-43104.herokuapp.com/
+Heroku App Github Repo: https://git.heroku.com/enigmatic-thicket-43104.git
+
+**MongoDB**
+
+**Get started with MongoDB atlas and setup database **
+1. create MongoDB atlas Account
+2. Create cluster
+3. Addd user to the database (read & write to database), add IP address - 0.0.0.0/0 -> allow acces to anywhere
+4. Get connection stringify
+5. Paste connection string to code
+6. Start building the app
+
+MongoDB connection String:
+mongodb+srv://anna:anna_chatbot@cluster0.c35a3rg.mongodb.net/anna_chatbotdb?retryWrites=true&w=majority
+
+**Get started with mongoose**
+1. Connect to database
+2. Create schema - for particular document
+3. Create model using createad schema
+4. Rigester model to mongoose
+5. Create new instance of document using the create model with data
+
+// ** How to import data to MongoDB Atlas**
+//1. Download MongoDB shell which is mongosh
+//2. Extract the .zip
+//3. Add mongosh bin folder directory to Path Variable - in system variable
+//4. Copy Connection string, then edit replce <password>
+//5.mongoimport --uri mongodb+srv://anna:anna_chatbot@cluster0.c35a3rg.mongodb.net/anna_chatbotdb --collection courses --type csv --file data.csv --headerline
+
+** How to deploy MERN in Vercel using Vercel CLI**
+1. Go to terminal inside your project directory and make sure to build to client
+2. create vercel.json
+3. install vercel globally -> npm i -g vercel
+4. type/run vercel
+5. choose login options -> (my case its github)
+6. type/run vercel
+7. answer the setup and deploy -> choose type "y"
+8. Link to existing project -> if already created project choose "y", else choose "n" 
+

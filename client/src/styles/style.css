@@ -1,0 +1,119 @@
+.navbar {
+   padding: 10px 0 !important;
+   z-index: 500 !important;
+}
+.navbar-nav {
+   color: var(--black) !important;
+}
+.nav-item {
+   padding: 10px 15px !important;
+}
+
+.nav-link {
+   padding: 0 !important;
+   color: inherit !important;
+   font-size: 1.05rem !important;
+}
+.navbar-nav .nav-item:last-child {
+   padding-right: 0 !important;
+}
+
+.nav-link:hover {
+   color: var(--primary) !important;
+}
+
+.navbar-toggler-icon {
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(58, 58, 58) ' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+.navbar-toggler {
+   border-color: var(--black) !important;
+}
+.navbar-toggler:focus {
+   text-decoration: none !;
+   outline: none !important;
+   box-shadow: 0 0 0 0.25rem rgba(58, 58, 58, 0.25) !important;
+}
+
+.feature,
+.member {
+   width: 30%;
+}
+
+.section-first {
+   margin-top: 120px;
+}
+
+/* admin sidebar */
+.sidebar {
+   height: 100vh;
+   width: 220px;
+   top: 0;
+   bottom: 0;
+   padding: 10px 13px;
+   transition: 0.4s;
+   background-color: var(--primary);
+}
+.sidebar.active {
+   width: 70px;
+}
+
+.sidebar-links {
+   padding: 0;
+   white-space: normal;
+   margin-top: 130px;
+   list-style-type: none;
+}
+.sidebar-link {
+   display: flex;
+   align-items: center;
+   font-weight: bold;
+   padding: 8px;
+   cursor: pointer;
+   text-decoration: none;
+   color: var(--black);
+}
+.sidebar-link span {
+   font-size: 0.95rem !important;
+}
+
+.sidebar-link:hover,
+.sidebar-link.active {
+   color: var(--white);
+}
+
+/* admin content */
+.admin-contents {
+   width: 100%;
+   max-height: 100vh !important;
+   overflow-y: auto !important;
+}
+
+/* media quiries */
+@media (max-width: 992px) {
+   .section h1 {
+      font-size: 1.5rem;
+   }
+   .section p,
+   .section button {
+      font-size: 0.9rem;
+   }
+
+   .nav-link {
+      text-align: center !important;
+   }
+}
+
+@media (max-width: 768px) {
+   .feature,
+   .member {
+      text-align: center;
+      width: 100%;
+   }
+
+   .feature > svg,
+   .feature > img,
+   .member > img {
+      display: block;
+      margin: 0 auto;
+   }
+}
