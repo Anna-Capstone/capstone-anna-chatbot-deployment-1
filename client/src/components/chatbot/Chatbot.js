@@ -448,9 +448,9 @@ const Chatbot = () => {
       };
 
       switch (payload) {
-         case 'DEGREE_PROGRAMS_OPTIONS_YES':
+         case 'COURSE_OPTIONS_YES':
             setMessages(prev => [...prev, humanSays]);
-            df_event_query('DEGREE_PROGRAMS_OPTIONS_YES');
+            df_event_query('COURSE_OPTIONS_YES');
             break;
 
          case 'RIASEC_START':
