@@ -186,3 +186,20 @@
    border-right: none !important;
    border-left: solid 3px var(--primary) !important;
 }
+
+@media (max-width: 768px) {
+   .chatbot {
+      height: 70%;
+      width: 90%;
+
+      top: 47%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+   }
+}
+
+@media (max-height: 500px) {
+   .chatbot {
+      overflow-y: auto;
+   }
+}
